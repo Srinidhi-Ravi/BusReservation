@@ -5,3 +5,20 @@
     width: 100%;
     height: 100vh !important;
 }
+
+.background-image{
+    background-attachment: fixed;
+}
+
+#intro{
+    height:100vh;
+}
+.center12{
+    padding: 34vh 35px !important;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .background-image {
+      background-attachment: scroll;
+    }
+  }
