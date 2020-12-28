@@ -4,5 +4,14 @@
     left: 0;
     width: 100%;
     height: 100vh !important;
-    background-attachment:  fixed;
 }
+
+.background-image{
+    background-attachment: fixed;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .background-image {
+      background-attachment: scroll;
+    }
+  }
