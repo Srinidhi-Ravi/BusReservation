@@ -1,0 +1,28 @@
+.nav123 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.5);
+    z-index: 4;
+    position: relative;
+  }
+  
+.li123 {
+    float: left;
+  }
+  
+.nav123 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+  }
+  .nav123 li a:hover {
+    background-color: #111;
+  }
+  .nav123 p a{
+    float: left;
+  }

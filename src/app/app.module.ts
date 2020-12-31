@@ -1,20 +1,50 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
+//import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
+//import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { AdminComponent } from './admin/admin.component';
+import { JourneyhireComponent } from './journeyhire/journeyhire.component';
+import { SearchbusComponent } from './searchbus/searchbus.component';
+
+
+ const routes:Routes = [
+  
+   {path: "login", component: LoginComponent},
+   {path: "signup", component: SignupComponent},
+   {path: "admin", component: AdminComponent},
+   {path: "journeyhire", component: JourneyhireComponent},
+  {path: "user", component: UserComponent},
+  {path: "searchbus", component: SearchbusComponent},
+  {path: "**", redirectTo: "user"}
+]
+
+const routing = RouterModule.forRoot(routes);
+
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent,
+    SignupComponent,
+    AdminComponent,
+    JourneyhireComponent,
+    SearchbusComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes),
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

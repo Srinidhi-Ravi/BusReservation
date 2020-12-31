@@ -33,8 +33,8 @@
     position: relative;
   }
   
-.nav123 li {
-    float: right;
+.li123 {
+    float: left;
   }
   
 .nav123 li a {
@@ -43,7 +43,26 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    float: right;
   }
   .nav123 li a:hover {
     background-color: #111;
+  }
+  .nav123 p a{
+    float: left;
+  }
+
+
+  .ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+  }
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
   }
