@@ -12,6 +12,7 @@ import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
 import { JourneyhireComponent } from './journeyhire/journeyhire.component';
 import { SearchbusComponent } from './searchbus/searchbus.component';
+import { ImgHoverComponent } from './img-hover/img-hover.component';
 
 
  const routes:Routes = [
@@ -37,7 +38,8 @@ const routing = RouterModule.forRoot(routes);
     SignupComponent,
     AdminComponent,
     JourneyhireComponent,
-    SearchbusComponent
+    SearchbusComponent,
+    ImgHoverComponent
   ],
   imports: [
     BrowserModule,
