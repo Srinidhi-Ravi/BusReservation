@@ -1,1 +1,73 @@
-<p>searchbus works!</p>
+<!-- <style>background-image: url(https://images.pexels.com/photos/955081/pexels-photo-955081.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);</style> -->
+<style>
+
+    #sri{
+       height: 700px;
+       width: 1000px;
+        margin-top: -23px;
+       /*margin-left: 5px;
+       margin-bottom: 0%; */
+     
+        background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-01.jpg) ;
+    
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    /* background-position:50% 50% */
+    }
+</style>
+<!-- <div class="s-bg-image s-bg-light-text s-new-text-section s-section s-text-section background-image" style="background-image: url(https://images.pexels.com/photos/955081/pexels-photo-955081.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);"> -->
+    <!-- <div class="s-bg-image s-bg-light-text s-new-text-section s-section s-text-section background-image" id = "famousroutes" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(https://images.pexels.com/photos/955081/pexels-photo-955081.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"> -->
+    <!-- <body width: 100%; height: 100%;> -->
+      <body style="background-color: rgb(155, 153, 153);">
+      <div class="page container" id="sri">
+        <div class="container mt-4" *ngIf="route" >
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+          <div class="row text-center">
+              <h6 class=" text-capitalize col-md-12 mb-3 text-center" id="hey">{{source}} - {{destination}}  {{fromDate}}</h6>
+            </div>
+       
+        <div class="row search-result mb-5 pb-5">
+  
+          <table class="table">
+  
+            <thead>
+              <tr class="hello">
+                  <th>Bus Name</th>
+                  <!-- <th>Dept. Time</th> -->
+                  <!-- <th>Coach Type</th> -->
+                  <th>Seats Available</th>
+                  <th>Fare</th>
+                  <th></th>
+                  <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="color: aliceblue;" *ngFor="let user of users">
+                
+                <td>{{user.BusName}}</td>
+                <td>{{user.SeatsAvailable}}</td>
+                <td>{{user.Fare}}</td>
+                <td></td>
+                <td><button type="button" class="btn btn-outline-light"><a routerLink="/booking"><b>Book Tickets</b></a></button></td>
+                <!-- <ng-template #template>
+             
+                    <div class="modal-body">
+                        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      <select-seat [bus]="b" (closeModal)="closeModal()"></select-seat>
+                    </div>
+                </ng-template>
+                <td><button  (click)="openModal(template)" class="btn btn-danger btn-sm">View Seats</button></td> -->
+              </tr>
+    
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
