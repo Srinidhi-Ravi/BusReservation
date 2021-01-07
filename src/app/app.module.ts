@@ -42,7 +42,7 @@ const routing = RouterModule.forRoot(routes);
     AdminComponent,
     JourneyhireComponent,
     SearchbusComponent,
-    ImgHoverComponent
+    ImgHoverComponent,
     BookingComponent
   ],
   imports: [
