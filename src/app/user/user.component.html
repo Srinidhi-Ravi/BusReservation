@@ -433,6 +433,18 @@
          }, 1000)
        })
     </script>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+    <script>$(window).scroll(function(e){
+       console.log("scrolled");
+    parallax();
+  });
+  
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.background-image').css('background-position',-(scrolled*0.15)+'px');
+  }</script>
  </body>
  
  
