@@ -1,0 +1,34 @@
+{
+    "searchbus": [
+      {
+        "BusName": "Parveen Travels",
+        "SeatsAvailable": 40,
+        "Fare": "1000"
+      
+      },
+      {
+        "BusName": "Anjana Travels",
+        "SeatsAvailable": 30,
+        "Fare": "800"
+      
+      },
+      {
+        "BusName": "SETC Travels",
+        "SeatsAvailable": 20,
+        "Fare": "500"
+      
+      },
+      {
+        "BusName": "Shyam Travels",
+        "SeatsAvailable": 40,
+        "Fare": "700"
+      
+      },
+      {
+        "BusName": "Karan Travels",
+        "SeatsAvailable": 35,
+        "Fare": "1000"
+      
+      }
+    ]
+  }

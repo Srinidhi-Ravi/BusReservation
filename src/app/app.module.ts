@@ -13,6 +13,8 @@ import { AdminComponent } from './admin/admin.component';
 import { JourneyhireComponent } from './journeyhire/journeyhire.component';
 import { SearchbusComponent } from './searchbus/searchbus.component';
 import { ImgHoverComponent } from './img-hover/img-hover.component';
+import {SearchbusGuard} from './guards/user-guard.guard';
+import { BookingComponent } from './booking/booking.component';
 
 
  const routes:Routes = [
@@ -22,7 +24,8 @@ import { ImgHoverComponent } from './img-hover/img-hover.component';
    {path: "admin", component: AdminComponent},
    {path: "journeyhire", component: JourneyhireComponent},
   {path: "user", component: UserComponent},
-  {path: "searchbus", component: SearchbusComponent},
+  {path: "searchbus", component: SearchbusComponent, canActivate: [SearchbusGuard]},
+  {path: "booking", component: BookingComponent},
   {path: "**", redirectTo: "user"}
 ]
 
@@ -40,6 +43,7 @@ const routing = RouterModule.forRoot(routes);
     JourneyhireComponent,
     SearchbusComponent,
     ImgHoverComponent
+    BookingComponent
   ],
   imports: [
     BrowserModule,
