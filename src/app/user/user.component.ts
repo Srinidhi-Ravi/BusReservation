@@ -44,8 +44,8 @@ public display_dest_city(event, value) {
        this.userService.user.dest = this.selected_dest_city;
 }
 fromDated:Date;
-public dated(event,value){
-  this.fromDated=value;
+public dated(event,val){
+  this.fromDated=val;
   this.userService.user.isValid = true;
   this.userService.user.from_Date = this.fromDated;
 }

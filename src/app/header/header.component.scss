@@ -3,26 +3,134 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(51, 51, 51, 0.5);
+    //background-color: rgba(122, 131, 161, 0.5);
+    background-color:#adb1be;
     z-index: 4;
     position: relative;
   }
   
 .li123 {
+  display: block;
+    color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
     float: left;
   }
+  .li123:hover{
+    background-color: rgb(155, 153, 153);
+    cursor: pointer;
+  }
   
-.nav123 li a {
+.nav123 li .active {
     display: block;
     color: #111;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     float: right;
+    cursor: pointer;
   }
-  .nav123 li a:hover {
-    background-color: aliceblue;
+ .nav123 li .active:hover {
+    background-color: rgb(155, 153, 153);
   }
-  .nav123 p a{
-    float: left;
+  // .nav123 p a{
+  //   float: left;
+  // }
+  :root {
+    --color: #3d4355;
   }
+  
+  body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-sherif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content1 {
+    // max-width: 100%;
+     margin: 0px;
+     width: 100%;
+    // padding: 0 20px;
+  }
+  
+  .hero {
+    position: relative;
+    background: #adb1be;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 120px;
+  }
+  
+  .hero h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 4.5rem;
+    margin: 0 0 10px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .hero p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.4;
+  }
+  
+  /* ========================= */
+  
+  .waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: var(--color);
+    // box-shadow: inset 0 0 50px rgba(47, 47, 49, 0.5);
+    box-shadow: inset 0 0 50px #a09494;
+    transition: 500ms;
+  }
+  
+  .waves::before,
+  .waves::after {
+    content: '';
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    top: -65vw;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+  
+  .waves::before {
+    border-radius: 46%;
+    // background: rgb(107, 108, 114);
+    //background:  #f3f3f3;
+    background: rgba(193, 197, 206, 0.5);
+    animation: waves 5s linear infinite;
+  }
+  
+  .waves::after {
+    border-radius: 45%;
+    // background: rgba(116, 116, 117, 0.74);
+    //background:  #f3f3f3;
+    background: rgba(193, 197, 206, 0.5);
+    animation: waves 15s linear infinite;
+  }
+  
+  @keyframes waves {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+  

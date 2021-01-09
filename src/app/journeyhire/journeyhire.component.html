@@ -1,1 +1,103 @@
-<p>journeyhire works!</p>
+<body style="background-color:#dde0ee ;">
+  
+<div style="height: 1px;"></div>
+  
+  <div class="row">
+    <div class="column" style="background-image: url(https://images.pexels.com/photos/977213/pexels-photo-977213.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500); background-position: center;">
+    
+    </div>
+    <div class="column0">
+      <h2 style="color: #2196F3; font-family: 'Times New Roman', Times, serif;"><b>Hire For Your Journey!!!</b></h2>
+  <p style="text-align: center;"><b>We simplified bus rentals, so you can focus on what's important to you!!!</b></p>
+      <div class="row1">
+        <div class="column1" style="background-color:#ccd7f0">
+          <h6 class="align"><b>Fuel Cost Included</b></h6>
+          <img class="petrol" src="../../assets/images/Petrol.png" alt="">
+          <p class="padding">Don't worry about mileage! All fuel costs are included. If you refill fuel, we'll pay you back!</p>
+        </div>
+        <div class="column1" style="background-color:#ccd7f0">
+          <h6 class="align"><b>Hidden Charges</b></h6>
+          <img src="../../assets/images/NoHiddenCharge.png" alt="">
+          <p class="padding">Our prices include taxes and insurance.What you see is what you really pay!</p>
+        </div>
+        <div class="column1" style="background-color:#ccd7f0">
+          <h6 class="align"><b>Flexi Pricing Packages</b></h6>
+          <img src="../../assets/images/FlexiCharge.png" alt="">
+          <p class="padding">One size never fits all! Choose a balance of time and kilometers that works best for you!</p>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="column2" style="background-color:#ccd7f0">
+          <h6 class="align"><b>Go Anywhere</b></h6>
+          <img src="https://cdn4.iconfinder.com/data/icons/smoothfill-map/30/map_028-location-marker-checkmark-pin-512.png" alt="">
+          <p class="padding">Our buses have all-India permits. Just remember to pay state tolls and entry taxes!</p>
+        </div>
+        <div class="column2" style="background-color:#ccd7f0">
+          <h6 class="align"><b>24x7 Roadside Assistance</b></h6>
+          <img src="../../assets/images/Road.png" alt="">
+          <p class="padding">We have round-the-clock, pan India partners. Help is never far away from you!</p>
+        </div>
+        <div class="column2" style="background-color:#ccd7f0">
+          <h6 class="align"><b>Damage Insurance</b></h6>
+          <img src="../../assets/images/Bus.png" alt="">
+          <p class="padding">All your bookings include damage insurance! Drive safe, but don’t worry!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page container" id="bgimage2" >
+    <div>
+        <h2 class="logo-font fit" style="font-family: 'Times New Roman', Times, serif;"><b>When are you planning?</b></h2>
+<div class="btn-group style_user_inputs from">
+<button class="btn btn-secondary btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+{{selected_origin_city}}
+</button>
+<div class="dropdown-menu">
+<button class="dropdown-item" type="button" (click)="display_origin_city($event, 'Banglore')">Banglore</button>
+<button class="dropdown-item" type="button" (click)="display_origin_city($event, 'Chennai')">Chennai</button>
+<button class="dropdown-item" type="button" (click)="display_origin_city($event, 'Delhi')">Delhi</button>
+<button class="dropdown-item" type="button" (click)="display_origin_city($event, 'Hydrabad')">Hydrabad</button>
+<button class="dropdown-item" type="button" (click)="display_origin_city($event, 'Indore')">Indore</button>
+<button class="dropdown-item" type="button" (click)="display_origin_city($event, 'Kolkatta')">Kolkatta</button>
+<button class="dropdown-item" type="button" (click)="display_origin_city($event, 'Mumbai')">Mumbai</button>
+</div>
+&nbsp;<input type="date"  required class="form-control form-control-lg" ngModel name="depart_date">
+</div>
+<div class="btn-group style_user_inputs to">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-secondary btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+{{selected_dest_city}}
+</button>
+<div class="dropdown-menu">
+<button class="dropdown-item" type="button" (click)="display_dest_city($event, 'Banglore')">Banglore</button>
+<button class="dropdown-item" type="button" (click)="display_dest_city($event, 'Chennai')">Chennai</button>
+<button class="dropdown-item" type="button" (click)="display_dest_city($event, 'Delhi')">Delhi</button>
+<button class="dropdown-item" type="button" (click)="display_dest_city($event, 'Hydrabad')">Hydrabad</button>
+<button class="dropdown-item" type="button" (click)="display_dest_city($event, 'Indore')">Indore</button>
+<button class="dropdown-item" type="button" (click)="display_dest_city($event, 'Kolkatta')">Kolkatta</button>
+<button class="dropdown-item" type="button" (click)="display_dest_city($event, 'Mumbai')">Mumbai</button>
+</div>
+&nbsp;<input type="date" required class="form-control form-control-lg" (click)="dated($event,'depart_date')" ngModel name="depart_date" >
+</div>
+      
+      </div>
+      <div class="s-button-group ">
+        <div class="s-button s-component">
+            <div class="driver">
+                <span class="driver1">With Driver</span>
+                <label class="switch" style="margin-left: 5px; ">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+               </div>
+           <div>                                        
+              <button class="btn btn-secondary btn-lg check hire"><a  style="color: aliceblue;" routerLink="/hirebus" data-component="button" target="_self">Hire Bus</a></button>
+           </div>
+          
+        </div>
+     </div>
+  </div>
+</body>
+
+
+

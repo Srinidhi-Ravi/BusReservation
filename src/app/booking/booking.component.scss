@@ -6,35 +6,40 @@ html {
 }
 
 .plane {
-  margin: 20px auto;
-  max-width: 300px;
+  //margin: 20px auto;
+  max-width: 500px;
+margin-left: 110px;
+margin-top: 10px;
 }
 
 .cockpit {
-  height: 250px; 
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  border-bottom: 5px solid #d8d8d8;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    width: 100%;
-    border-radius: 50%;
-    border-right: 5px solid #d8d8d8;
-    border-left: 5px solid #d8d8d8;
-  }
-  h1 {
-    width: 60%;
-    margin: 100px auto 35px auto;
+  // height: 250px; 
+  // position: relative;
+  // overflow: hidden;
+  // text-align: center;
+  //padding-top: 50px;
+  //border-left: 5px solid #d8d8d8;
+  //border-radius: 15px;
+  // &:before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 500px;
+  //   width: 100%;
+  //   border-radius: 50%;
+  //   border-right: 5px solid #d8d8d8;
+  //   border-left: 5px solid #d8d8d8;
+  // }
+  h4 {
+   margin-top: 10px;
+   padding-top: 20px;
   }
 }
 
 .exit {
+  
   position: relative;
   height: 50px;
   &:before,
@@ -58,20 +63,53 @@ html {
     right: 0;
   }
 }
-
-.fuselage {
-  border-right: 5px solid #d8d8d8;
-  border-left: 5px solid #d8d8d8;
+.horizontal{
+ margin-top: -25px;
+ margin-bottom: 20px;
+  transform: rotate(90deg);
 }
 
+.fuselage {
+  margin-top: 10px;
+  border-top: 5px solid #f5e8da;
+  border-bottom: 5px solid #f5e8da;
+  border-radius: 10px;
+  background-color: #d1b69c;
+}
+.deck{
+  margin-top: 50px;
+  background-color: #d1b69c;
+  width: 100px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+.align{
+  margin-top: 60px;
+}
+
+.steer{
+  width: 30px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
 ol {
   list-style :none;
   padding: 0;
   margin: 0;
 }
-
-
-
+.row0{
+  margin-left: 2px;
+  margin-top: 2px;
+}
+.row1{
+  margin-left: 70px;
+}
+.row2{
+  margin-left: 70px;
+}
+.row4{
+  margin-left: 70px;
+}
 .seats {
   display: flex;
    flex-direction: row;
@@ -80,12 +118,13 @@ ol {
 }
 
 .seat {
+  margin-left: 10px;
   display: flex;
-  flex: 0 0 14.28571428571429%;
+  flex: 0 0 15%;
   padding: 5px;
-  //position: relative;  
-  &:nth-child(2) {
-    margin-right: 14.28571428571429%;
+  position: relative;  
+  &:nth-child(5) {
+    margin-right: 40%;
   }
   input[type=checkbox] {
     position: absolute;
@@ -93,7 +132,7 @@ ol {
   }
   input[type=checkbox]:checked {
     + label {
-      background: #F42536;      
+      background: #927960;      
       -webkit-animation-name: rubberBand;
           animation-name: rubberBand;
       animation-duration: 300ms;
@@ -103,7 +142,7 @@ ol {
   input[type=checkbox]:disabled {
     + label {
       background: #dddddd;
-      text-indent: -9999px;
+text-indent: -9999px;
       overflow: hidden;
       &:after {
         content: "X";
@@ -128,7 +167,7 @@ ol {
     font-weight: bold;
     line-height: 1.5rem;
     padding: 4px 0;
-    background: #bada55;
+    background: #f5e8da;
     border-radius: 5px;
     animation-duration: 300ms;
     animation-fill-mode: both;
@@ -146,7 +185,7 @@ ol {
     }
     &:hover {
       cursor: pointer;
-      box-shadow: 0 0 0px 2px #5C6AFF;
+      box-shadow: 0 0 0px 2px black;
     }
     
   }

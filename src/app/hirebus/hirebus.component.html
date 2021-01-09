@@ -1,7 +1,8 @@
+
 <!-- <style>background-image: url(https://images.pexels.com/photos/955081/pexels-photo-955081.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);</style> -->
 <style>
 
-    #sri{
+    #bgimage{
        height: 700px;
        width: 1000px;
         margin-top: -23px;
@@ -16,9 +17,11 @@
     /* background-position:50% 50% */
     }
 </style>
-
-        <body style="background-color: #adb1be">
-      <div class="page container" >      
+<!-- <div class="s-bg-image s-bg-light-text s-new-text-section s-section s-text-section background-image" style="background-image: url(https://images.pexels.com/photos/955081/pexels-photo-955081.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);"> -->
+    <!-- <div class="s-bg-image s-bg-light-text s-new-text-section s-section s-text-section background-image" id = "famousroutes" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(https://images.pexels.com/photos/955081/pexels-photo-955081.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"> -->
+    <!-- <body width: 100%; height: 100%;> -->
+      <body style="background-color: #dde0ee">
+      <div class="page container" id="bgimage">
         <div class="container mt-4" *ngIf="route" >
     <div class="row justify-content-center">
       <div class="col-md-10">
@@ -35,7 +38,7 @@
                   <th>Bus Name</th>
                   <!-- <th>Dept. Time</th> -->
                   <!-- <th>Coach Type</th> -->
-                  <th>Seats Available</th>
+                  <th>Total Seats</th>
                   <th>Fare</th>
                   <th></th>
                   <th></th>

@@ -1,0 +1,165 @@
+
+
+@media screen and (min-width: 720px){
+
+.check{
+    margin-top: 30px;
+    margin-left: 450px;
+}
+.fit{
+  margin-left: 10px;
+  margin-top: 30px;
+    // padding-top: 200px;
+    // padding-left: 380px;
+    color: rgb(0, 0, 0);
+}
+.from{
+    padding-left: 180px;
+    padding-top: 50px;
+}
+.to{
+    padding-top: 50px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.driver{
+    margin-left: 400px;
+    margin-top: 30px;
+}
+.driver1{
+    border-top:  #6c757d solid 2px;
+    border-left: #6c757d solid 2px;
+    border-right:  #6c757d solid 2px;
+    border-bottom:  #6c757d solid 2px;
+    border-radius: 10px;
+    background-color: #6c757d;
+    color: aliceblue;
+    padding: 15px;
+    font-size: larger;
+    margin-left: 60px;
+    
+    
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+  * {
+    box-sizing: border-box;
+}
+.column{
+    float: left;
+    width: 40%;
+    padding: 10px;
+    height: 400px;
+}
+.column0 {
+  float: right;
+  width: 60%;
+  padding: 10px;
+  height: 400px;
+}
+h2 {
+  text-align: center;
+}
+
+.row1{
+  height: 145px;
+  
+}
+.row2{
+  height: 145px;
+}
+.column1{
+  float: left;
+width: 30%;
+height: 147px;
+margin-left: 5px;
+border-radius: 5px;
+}
+.column2{
+  float: left;
+width: 30%;
+height: 147px;
+margin-left: 5px;
+border-radius: 5px;
+margin-top: 10px;
+}
+img{
+  width: 30px;
+  margin-left: 100px;
+}
+h6{
+  text-align: center;
+  margin-top: 5px;
+}
+.padding{
+  padding: 10px;
+}
+.hire{
+  margin-top: 10px;
+  margin-left: 500px;
+  margin-bottom: 50px;
+}
+.align{
+  color: #2196F3;
+}
+.from{
+  margin-left: 70px;
+}
+}
